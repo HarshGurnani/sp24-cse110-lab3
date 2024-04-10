@@ -11,10 +11,16 @@
       <div>
         <h1>Tech Tritons Team Meeting Minutes</h1>
         <div>
-          <img src="Tritons.png" width="200" />
+          <img src="Tritons.png" width="200" alt="Tech Tritons Logo" />
           <details>
             <summary>Tech Tritons Logo</summary>
-            <p>This image was taken from <a href="https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons">ESPN</a></p>
+            <p>
+              This image was taken from
+              <a
+                href="https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons"
+                >ESPN</a
+              >
+            </p>
           </details>
         </div>
         <h2>Topic: Finalizing project and delegating tasks</h2>
@@ -97,8 +103,10 @@
           and Taylor, <em>in order of mention</em>.
         </p>
 
-        <p>A rough design sketch drawn by Matty at the meeting is shown below:</p>
-        <img src="todo-list.jpeg" width="200">
+        <p>
+          A rough design sketch drawn by Matty at the meeting is shown below:
+        </p>
+        <img src="todo-list.jpeg" width="200" alt="Todo List Sketch" />
       </section>
 
       <br />
@@ -111,37 +119,44 @@
           project. Through votes, we decided to proceed with a To-Do list for
           the project, and have the team social at bowling. The action items for
           each person are:
-          <ul>
-            <li>Check your calendar for team social availability</li>
-            <li>Work on assigned tasks decided in today's meeting</li>
-            <li>Matty: update Ashley on items discussed at today's meeting</li>
-            <li>Team leader: address miscellanous comments/questions/concerns below</li>
-          </ul>
         </p>
+        <ul>
+          <li>Check your calendar for team social availability</li>
+          <li>Work on assigned tasks decided in today's meeting</li>
+          <li>Matty: update Ashley on items discussed at today's meeting</li>
+          <li>
+            Team leader: address miscellanous comments/questions/concerns below
+          </li>
+        </ul>
 
         <h3>Miscellanous comments/questions/concerns</h3>
-        <p>Abel brought up a need for a Figma design - we need to ask the team manager if anyone is available to work design-side.</p>
-        <p>Question for client: Is there a specific theme they want us to follow for the UI of the app?</p>
+        <p>
+          Abel brought up a need for a Figma design - we need to ask the team
+          manager if anyone is available to work design-side.
+        </p>
+        <p>
+          Question for client: Is there a specific theme they want us to follow
+          for the UI of the app?
+        </p>
       </section>
 
       <br />
 
-      <section id = "resources">
+      <section id="resources">
         <h2>Resources</h2>
         <p>Here is an audio and video recording of today's meeting:</p>
 
         <h3>Meeting Audio</h3>
         <audio controls>
-          <source src="meeting.mp3" type="audio/mpeg">
+          <source src="meeting.mp3" type="audio/mpeg" />
           Audio not supported.
         </audio>
 
         <h3>Meeting Video</h3>
         <video controls>
-          <source src="meeting.mp4" type="video/mp4">
+          <source src="meeting.mp4" type="video/mp4" />
           Video not supported.
         </video>
-
       </section>
     </main>
 
@@ -153,37 +168,42 @@
         <div>
           <label for="name">Name:</label>
           <select id="name" name="name" required>
+            <option></option>
             <option value="Harsh Gurnani">Harsh Gurnani</option>
             <option value="Abel Tesfaye">Abel Tesfaye</option>
             <option value="Taylor Swift">Taylor Swift</option>
             <option value="Matty Healy">Matty Healy</option>
             <option value="Ashley Frangipane">Ashley Frangipane</option>
           </select>
-          
 
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required>
+          <input type="text" id="email" name="email" required />
 
           <label for="meeting_date">Meeting Date:</label>
-          <input type="date" id="meeting_date" name="meeting_date" required>
-        </div> 
-
-        <br />
-
-        <div>
-          <label for="meeting_feedback">Meeting Feedback:</label>
-          <textarea id="meeting_feedback" name="meeting_feedback" rows="4" required></textarea>
+          <input type="date" id="meeting_date" name="meeting_date" required />
         </div>
 
         <br />
 
         <div>
-          <label for="rating">Meeting Rating:</label>
-          <input type="radio" id="rating_1" name="rating" value="1" required>
+          <label for="meeting_feedback">Meeting Feedback:</label>
+          <textarea
+            id="meeting_feedback"
+            name="meeting_feedback"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <br />
+
+        <div>
+          <p>Meeting Rating:</p>
+          <input type="radio" id="rating_1" name="rating" value="1" required />
           <label for="rating_1">1</label>
-          <input type="radio" id="rating_2" name="rating" value="2" required>
+          <input type="radio" id="rating_2" name="rating" value="2" required />
           <label for="rating_2">2</label>
-          <input type="radio" id="rating_3" name="rating" value="3" required>
+          <input type="radio" id="rating_3" name="rating" value="3" required />
           <label for="rating_3">3</label>
         </div>
 
@@ -191,13 +211,13 @@
 
         <div>
           <label for="meeting_day">Preferred Meeting Day:</label>
-          <input list="days" id="meeting_day" name="meeting_day">
+          <input list="days" id="meeting_day" name="meeting_day" />
           <datalist id="days">
-            <option value="Monday">
-            <option value="Tuesday">
-            <option value="Wednesday">
-            <option value="Thursday">
-            <option value="Friday">
+            <option value="Monday"></option>
+            <option value="Tuesday"></option>
+            <option value="Wednesday"></option>
+            <option value="Thursday"></option>
+            <option value="Friday"></option>
           </datalist>
         </div>
 
@@ -205,7 +225,7 @@
 
         <div>
           <label for="subscribe">Subscribe to Newsletter:</label>
-          <input type="checkbox" id="subscribe" name="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe" />
         </div>
 
         <br />
@@ -213,7 +233,6 @@
         <div>
           <button type="submit">Submit</button>
         </div>
-
       </fieldset>
     </form>
 
