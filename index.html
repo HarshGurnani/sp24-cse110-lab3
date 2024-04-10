@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/x-con" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Tech Tritons Team Meeting Minutes</h1>
+        <div>
+          <img src="Tritons.png" width="200" />
+          <details>
+            <summary>Tech Tritons Logo</summary>
+            <p>This image was taken from <a href="https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons">ESPN</a></p>
+          </details>
+        </div>
+        <h2>Topic: Finalizing project and delegating tasks</h2>
+        <h2>Date: 04/09/2024</h2>
+        <h2>Introduction</h2>
+        <div>
+          <h3>Attendance</h3>
+          <ul>
+            <li>Harsh Gurnani - Yes</li>
+            <li>Abel Tesfaye - Yes</li>
+            <li>Taylor Swift - Yes</li>
+            <li>Matty Healy - Yes</li>
+            <li>Ashley Frangipane - No</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Agenda</h3>
+      <nav>
+        <ul>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new">New Business</a></li>
+          <li><a href="#discussions">Discussions</a></li>
+          <li><a href="#resources">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <ol>
+          <li>
+            <h4>Listing project ideas</h4>
+            <p>Decided at the last meeting, the project ideas are:</p>
+            <span>To-do List, </span>
+            <span>Song Recommendation, </span>
+            <span>Diabetes Prediction</span>
+
+            <p>
+              The final vote was 3 in favor of To-do List, 1 in favor of Song
+              Recommendation, and 1 in favor of Diabetes Prediction. The final
+              project will be a <strong>To-do List</strong>.
+            </p>
+          </li>
+          <li>
+            <h4>Team social ideas</h4>
+            <ul>
+              <li>Bowling</li>
+              <li>Clubbing (<b>after 11 pm</b>)</li>
+              <li>Picnic (this <i>may</i> not be an option if it rains)</li>
+            </ul>
+
+            <p>
+              There was a unanimous vote for <strong>bowling</strong>. The final
+              date will be decided at a future meeting.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <br />
+
+      <section id="new">
+        <h2>New Business</h2>
+
+        <p>
+          The main order of business is delegating tasks for the aforementioned
+          project. The tasks needed to be completed are:
+        </p>
+        <ul>
+          <li>Set up the Github repo</li>
+          <li>Research possible tech stacks to conduct the project</li>
+          <li>Set up client meetings with</li>
+        </ul>
+
+        <p>
+          After some deliberation, the tasks have been assigned to Harsh, Abel,
+          and Taylor, <em>in order of mention</em>.
+        </p>
+
+        <p>A rough design sketch drawn by Matty at the meeting is shown below:</p>
+        <img src="todo-list.jpeg" width="200">
+      </section>
+
+      <br />
+
+      <section id="discussion">
+        <h2>Discussion</h2>
+        <p>
+          The items discussed in the meeting on 04/09/24 were finalizing a
+          project idea, deciding on a team social, and delegating tasks for the
+          project. Through votes, we decided to proceed with a To-Do list for
+          the project, and have the team social at bowling. The action items for
+          each person are:
+          <ul>
+            <li>Check your calendar for team social availability</li>
+            <li>Work on assigned tasks decided in today's meeting</li>
+            <li>Matty: update Ashley on items discussed at today's meeting</li>
+            <li>Team leader: address miscellanous comments/questions/concerns below</li>
+          </ul>
+        </p>
+
+        <h3>Miscellanous comments/questions/concerns</h3>
+        <p>Abel brought up a need for a Figma design - we need to ask the team manager if anyone is available to work design-side.</p>
+        <p>Question for client: Is there a specific theme they want us to follow for the UI of the app?</p>
+      </section>
+
+      <br />
+
+      <section id = "resources">
+        <h2>Resources</h2>
+        <p>Here is an audio and video recording of today's meeting:</p>
+
+        <h3>Meeting Audio</h3>
+        <audio controls>
+          <source src="meeting.mp3" type="audio/mpeg">
+          Audio not supported.
+        </audio>
+
+        <h3>Meeting Video</h3>
+        <video controls>
+          <source src="meeting.mp4" type="video/mp4">
+          Video not supported.
+        </video>
+
+      </section>
+    </main>
+
+    <br />
+
+    <form>
+      <fieldset>
+        <legend>Feedback Form</legend>
+        <div>
+          <label for="name">Name:</label>
+          <select id="name" name="name" required>
+            <option value="Harsh Gurnani">Harsh Gurnani</option>
+            <option value="Abel Tesfaye">Abel Tesfaye</option>
+            <option value="Taylor Swift">Taylor Swift</option>
+            <option value="Matty Healy">Matty Healy</option>
+            <option value="Ashley Frangipane">Ashley Frangipane</option>
+          </select>
+          
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+
+          <label for="meeting_date">Meeting Date:</label>
+          <input type="date" id="meeting_date" name="meeting_date" required>
+        </div> 
+
+        <br />
+
+        <div>
+          <label for="meeting_feedback">Meeting Feedback:</label>
+          <textarea id="meeting_feedback" name="meeting_feedback" rows="4" required></textarea>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="rating">Meeting Rating:</label>
+          <input type="radio" id="rating_1" name="rating" value="1" required>
+          <label for="rating_1">1</label>
+          <input type="radio" id="rating_2" name="rating" value="2" required>
+          <label for="rating_2">2</label>
+          <input type="radio" id="rating_3" name="rating" value="3" required>
+          <label for="rating_3">3</label>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="meeting_day">Preferred Meeting Day:</label>
+          <input list="days" id="meeting_day" name="meeting_day">
+          <datalist id="days">
+            <option value="Monday">
+            <option value="Tuesday">
+            <option value="Wednesday">
+            <option value="Thursday">
+            <option value="Friday">
+          </datalist>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="subscribe">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+
+        <br />
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <footer>
+      <p>&copy; 2024 Tech Titans Team Meeting Minutes</p>
+    </footer>
+  </body>
+</html>
