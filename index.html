@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Minutes</title>
@@ -26,7 +27,7 @@
         <h2>Topic: Finalizing project and delegating tasks</h2>
         <h2>Date: 04/09/2024</h2>
         <h2>Introduction</h2>
-        <div>
+        <div id="attendance">
           <h3>Attendance</h3>
           <ul>
             <li>Harsh Gurnani - Yes</li>
@@ -37,112 +38,121 @@
           </ul>
         </div>
       </div>
-      <h3>Agenda</h3>
-      <nav>
-        <ul>
-          <li><a href="#unfinished">Unfinished Business</a></li>
-          <li><a href="#new">New Business</a></li>
-          <li><a href="#discussions">Discussions</a></li>
-          <li><a href="#resources">Resources</a></li>
-        </ul>
-      </nav>
+      <div id="agenda">
+        <h3>Agenda</h3>
+        <nav>
+          <ul>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#discussions">Discussions</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <hr />
 
     <main>
-      <section id="unfinished">
-        <h2>Unfinished Business</h2>
-        <ol>
-          <li>
-            <h4>Listing project ideas</h4>
-            <p>Decided at the last meeting, the project ideas are:</p>
-            <span>To-do List, </span>
-            <span>Song Recommendation, </span>
-            <span>Diabetes Prediction</span>
+      <div class="container">
+        <section id="unfinished" class="content">
+          <h2>Unfinished Business</h2>
+          <ol>
+            <li>
+              <h4>Listing project ideas</h4>
+              <p>Decided at the last meeting, the project ideas are:</p>
+              <span>To-do List, </span>
+              <span>Song Recommendation, </span>
+              <span>Diabetes Prediction</span>
 
-            <p>
-              The final vote was 3 in favor of To-do List, 1 in favor of Song
-              Recommendation, and 1 in favor of Diabetes Prediction. The final
-              project will be a <strong>To-do List</strong>.
-            </p>
-          </li>
-          <li>
-            <h4>Team social ideas</h4>
-            <ul>
-              <li>Bowling</li>
-              <li>Clubbing (<b>after 11 pm</b>)</li>
-              <li>Picnic (this <i>may</i> not be an option if it rains)</li>
-            </ul>
+              <p>
+                The final vote was 3 in favor of To-do List, 1 in favor of Song
+                Recommendation, and 1 in favor of Diabetes Prediction. The final
+                project will be a <strong>To-do List</strong>.
+              </p>
+            </li>
+            <li>
+              <h4>Team social ideas</h4>
+              <ul>
+                <li>Bowling</li>
+                <li>Clubbing (<b>after 11 pm</b>)</li>
+                <li>Picnic (this <i>may</i> not be an option if it rains)</li>
+              </ul>
 
-            <p>
-              There was a unanimous vote for <strong>bowling</strong>. The final
-              date will be decided at a future meeting.
-            </p>
-          </li>
-        </ol>
-      </section>
-
-      <br />
-
-      <section id="new">
-        <h2>New Business</h2>
-
-        <p>
-          The main order of business is delegating tasks for the aforementioned
-          project. The tasks needed to be completed are:
-        </p>
-        <ul>
-          <li>Set up the Github repo</li>
-          <li>Research possible tech stacks to conduct the project</li>
-          <li>Set up client meetings with</li>
-        </ul>
-
-        <p>
-          After some deliberation, the tasks have been assigned to Harsh, Abel,
-          and Taylor, <em>in order of mention</em>.
-        </p>
-
-        <p>
-          A rough design sketch drawn by Matty at the meeting is shown below:
-        </p>
-        <img src="todo-list.jpeg" width="200" alt="Todo List Sketch" />
-      </section>
+              <p>
+                There was a unanimous vote for <strong>bowling</strong>. The
+                final date will be decided at a future meeting.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </div>
 
       <br />
 
-      <section id="discussion">
-        <h2>Discussion</h2>
-        <p>
-          The items discussed in the meeting on 04/09/24 were finalizing a
-          project idea, deciding on a team social, and delegating tasks for the
-          project. Through votes, we decided to proceed with a To-Do list for
-          the project, and have the team social at bowling. The action items for
-          each person are:
-        </p>
-        <ul>
-          <li>Check your calendar for team social availability</li>
-          <li>Work on assigned tasks decided in today's meeting</li>
-          <li>Matty: update Ashley on items discussed at today's meeting</li>
-          <li>
-            Team leader: address miscellanous comments/questions/concerns below
-          </li>
-        </ul>
+      <div class="container">
+        <section id="new" class="content">
+          <h2>New Business</h2>
 
-        <h3>Miscellanous comments/questions/concerns</h3>
-        <p>
-          Abel brought up a need for a Figma design - we need to ask the team
-          manager if anyone is available to work design-side.
-        </p>
-        <p>
-          Question for client: Is there a specific theme they want us to follow
-          for the UI of the app?
-        </p>
-      </section>
+          <p>
+            The main order of business is delegating tasks for the
+            aforementioned project. The tasks needed to be completed are:
+          </p>
+          <ul>
+            <li>Set up the Github repo</li>
+            <li>Research possible tech stacks to conduct the project</li>
+            <li>Set up client meetings with</li>
+          </ul>
+
+          <p>
+            After some deliberation, the tasks have been assigned to Harsh,
+            Abel, and Taylor, <em>in order of mention</em>.
+          </p>
+
+          <p>
+            A rough design sketch drawn by Matty at the meeting is shown below:
+          </p>
+          <img src="todo-list.jpeg" width="200" alt="Todo List Sketch" />
+        </section>
+      </div>
 
       <br />
 
-      <section id="resources">
+      <div class="container">
+        <section id="discussions" class="content">
+          <h2>Discussion</h2>
+          <p>
+            The items discussed in the meeting on 04/09/24 were finalizing a
+            project idea, deciding on a team social, and delegating tasks for
+            the project. Through votes, we decided to proceed with a To-Do list
+            for the project, and have the team social at bowling. The action
+            items for each person are:
+          </p>
+          <ul>
+            <li>Check your calendar for team social availability</li>
+            <li>Work on assigned tasks decided in today's meeting</li>
+            <li>Matty: update Ashley on items discussed at today's meeting</li>
+            <li>
+              Team leader: address miscellanous comments/questions/concerns
+              below
+            </li>
+          </ul>
+
+          <h3>Miscellanous comments/questions/concerns</h3>
+          <p>
+            Abel brought up a need for a Figma design - we need to ask the team
+            manager if anyone is available to work design-side.
+          </p>
+          <p>
+            Question for client: Is there a specific theme they want us to
+            follow for the UI of the app?
+          </p>
+        </section>
+      </div>
+
+      <br />
+
+      <section id="resources" class="content">
         <h2>Resources</h2>
         <p>Here is an audio and video recording of today's meeting:</p>
 
@@ -235,6 +245,9 @@
         </div>
       </fieldset>
     </form>
+
+    <br />
+    <br />
 
     <hr />
 
