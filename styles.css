@@ -1,0 +1,22 @@
+a {
+  color: blue; /* Color for links */
+}
+
+a[href="https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons"]
+{
+  color: hsl(10 80% 50% / 25%); /* Color for link to logo photo */
+}
+
+h1,
+h2,
+h3 {
+  color: #555; /* Header colors */
+}
+
+h1 {
+  font-family: "Roboto", sans-serif; /* Font for Header 1 */
+}
+
+h2 {
+  text-align: center; /* Text alignment for header 2 */
+}
