@@ -1,3 +1,7 @@
+* {
+  font-size: 16px;
+}
+
 a {
   color: blue; /* Color for links */
 }
@@ -15,8 +19,58 @@ h3 {
 
 h1 {
   font-family: "Roboto", sans-serif; /* Font for Header 1 */
+  font-size: 25px;
 }
 
 h2 {
   text-align: center; /* Text alignment for header 2 */
+  font-size: 20px;
+}
+
+.body-container {
+  padding: 20px 20px 20px 20px; /* absolute sizing - padding around borders */
+  border: 1px solid #ccc; /* border-style, border-color, border-width */
+  border-radius: 5px; /* border-radius */
+  display: block; /* block */
+  width: 80%; /* width */
+  height: 80%;
+  max-width: 1200px; /* max-width */
+  min-width: 300px; /* min-width */
+  justify-content: space-between;
+  margin: 25px 25px 20px 20px; /* Class Selector */
+}
+
+.resources-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 5px;
+  border-style: solid;
+  width: 80%; /* width */
+  height: 80%;
+  max-width: 1200px; /* max-width */
+  min-width: 300px; /* min-width */
+}
+
+.ems li {
+  font-size: 0.9em;
+}
+
+nav > ul {
+  margin-top: 10px; /* Child Combinator */
+}
+
+nav ~ div {
+  margin-top: 20px; /* General sibling combinator */
+}
+
+nav + footer {
+  margin-top: 20px; /* Adjacent sibling combinator */
 }
