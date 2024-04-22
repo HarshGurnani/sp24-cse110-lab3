@@ -27,20 +27,28 @@ h2 {
   font-size: 20px;
 }
 
+nav ul li {
+  display: inline-block; /* inline-block */
+}
+
 .body-container {
   padding: 20px 20px 20px 20px; /* absolute sizing - padding around borders */
   border: 1px solid #ccc; /* border-style, border-color, border-width */
   border-radius: 5px; /* border-radius */
-  display: block; /* block */
   width: 80%; /* width */
   height: 80%;
-  max-width: 1200px; /* max-width */
+  max-width: 1400px; /* max-width */
   min-width: 300px; /* min-width */
   justify-content: space-between;
   margin: 25px 25px 20px 20px; /* Class Selector */
+  display: flex; /* flex */
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 .resources-container {
+  display: block; /* block */
   margin-top: 25px;
   margin-bottom: 25px;
   margin-left: 20px;
@@ -57,6 +65,35 @@ h2 {
   height: 80%;
   max-width: 1200px; /* max-width */
   min-width: 300px; /* min-width */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+.one,
+.two {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  position: fixed; /* fixed */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #333;*/
+  color: #333;
+  text-align: center;
 }
 
 .ems li {
