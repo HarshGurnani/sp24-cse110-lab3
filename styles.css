@@ -36,6 +36,13 @@ h2 {
 
 nav ul li {
   display: inline-block; /* inline-block */
+  & > a {
+    color: blue;
+    &:hover,
+    &:focus {
+      color: lightblue;
+    }
+  }
 }
 
 .body-container {
@@ -131,4 +138,14 @@ button:hover {
 
 button:active {
   box-shadow: 2px 2px 5px color-mix(in srgb, blue, white);
+}
+
+section.content {
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 2px 2px 5px lightgray;
+}
+
+h2:has(+ p) {
+  margin-bottom: 20px;
 }
