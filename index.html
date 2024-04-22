@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-con" href="favicon-32x32.png" />
   </head>
   <body>
-    <header>
+    <header style="position: relative; top: 10px">
       <div>
         <h1>Tech Tritons Team Meeting Minutes</h1>
         <div>
@@ -57,7 +57,7 @@
       </div>
     </header>
 
-    <hr />
+    <hr style="position: relative; top: 10px" />
 
     <main>
       <div class="body-container">
@@ -93,11 +93,9 @@
             </li>
           </ol>
         </section>
-      </div>
 
-      <br />
+        <br />
 
-      <div class="body-container">
         <section id="new" class="content">
           <h2>New Business</h2>
 
@@ -160,22 +158,28 @@
       <br />
 
       <div class="resources-container">
-        <section id="resources" class="content">
-          <h2>Resources</h2>
-          <p>Here is an audio and video recording of today's meeting:</p>
+        <div class="wrapper">
+          <section id="resources" class="content">
+            <h2>Resources</h2>
+            <p>Here is an audio and video recording of today's meeting:</p>
 
-          <h3>Meeting Audio</h3>
-          <audio controls>
-            <source src="meeting.mp3" type="audio/mpeg" />
-            Audio not supported.
-          </audio>
+            <div class="one">
+              <h3>Meeting Audio</h3>
+              <audio controls>
+                <source src="meeting.mp3" type="audio/mpeg" />
+                Audio not supported.
+              </audio>
+            </div>
 
-          <h3>Meeting Video</h3>
-          <video controls>
-            <source src="meeting.mp4" type="video/mp4" />
-            Video not supported.
-          </video>
-        </section>
+            <div class="two">
+              <h3>Meeting Video</h3>
+              <video controls>
+                <source src="meeting.mp4" type="video/mp4" />
+                Video not supported.
+              </video>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
 
