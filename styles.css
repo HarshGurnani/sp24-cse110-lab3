@@ -80,7 +80,7 @@ nav ul li {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 800px) {
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -110,4 +110,13 @@ nav ~ div {
 
 nav + footer {
   margin-top: 20px; /* Adjacent sibling combinator */
+}
+
+button:hover {
+  color: black;
+  background-color: darkgray;
+}
+
+button:active {
+  box-shadow: 2px 2px 5px #fc894d;
 }
