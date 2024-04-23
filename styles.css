@@ -12,7 +12,6 @@ a {
 
 a[href="https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons"]
 {
-  --box-color: invalid-color;
   color: var(--link-color, red); /* Color for link to logo photo */
 }
 
